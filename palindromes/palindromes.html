@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+var palindromes = function(palindromeInput) {
+var palindromeNoPunctuation = palindromeInput.replace(/\W/g, "");
+var palindromeNoSpaces = palindromeNoPunctuation.split(" ").join("").toLowerCase();
+var reversePalindrome = palindromeNoSpaces.split("").reverse().join("");
+
+console.log(palindromeNoSpaces);
+console.log(palindromeNoPunctuation);
+console.log(reversePalindrome);
+
+if(palindromeNoSpaces == reversePalindrome){
+  return true;
+} else {
+  return false;
+}
+console.log(palindromeNoSpaces + " " + reversePalindrome);
+
+}
+
+
+
+</script>
+</html>

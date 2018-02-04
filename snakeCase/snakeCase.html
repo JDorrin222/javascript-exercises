@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+
+var snakeCase = function(snakeCaseInput) {
+
+  var lettersOnly = snakeCaseInput.replace(/\W/g, " ");
+  var words = lettersOnly.match(/[A-Z]*[^ A-Z]+/g);
+  var joinWords = words.join("_").toLowerCase();
+
+  console.log(words);
+  console.log(joinWords);
+  // var palindromeNoPunctuation = palindromeInput.replace(/\W/g, "");
+  // var palindromeNoSpaces = palindromeNoPunctuation.split(" ").join("").toLowerCase();
+  // var reversePalindrome = palindromeNoSpaces.split("").reverse().join("");
+
+
+
+
+}
+</script>
+</html>

@@ -1,10 +1,9 @@
 var snakeCase = function(snakeCaseInput) {
 
-  let lettersOnly = snakeCaseInput.replace(/\W/g, " ");
-// match from beginning of string (^) uppercase letters and spaces 
-  let words = lettersOnly.match(/[A-Z]*[^ A-Z]+/g);
-  return words.join("_").toLowerCase();
+  var lettersOnly = snakeCaseInput.replace(/\W/g, " ");
+  var words = lettersOnly.split(/[A-Z]/g);
 
+  console.log(words);
 
   // var palindromeNoPunctuation = palindromeInput.replace(/\W/g, "");
   // var palindromeNoSpaces = palindromeNoPunctuation.split(" ").join("").toLowerCase();
